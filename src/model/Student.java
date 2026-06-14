@@ -1,6 +1,7 @@
 package model;
 
 public class Student {
+
     private int studentId;
     private String name;
     private String department;
@@ -13,11 +14,39 @@ public class Student {
         this.marks = marks;
     }
 
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public double getMarks() {
+        return marks;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public void setMarks(double marks) {
+        this.marks = marks;
+    }
+
     @Override
     public String toString() {
-        return "Student ID: " + studentId +
-                "\nName: " + name +
-                "\nDepartment: " + department +
-                "\nMarks: " + marks;
+        return "Student ID: " + studentId
+                + "\nName: " + name
+                + "\nDepartment: " + department
+                + "\nMarks: " + marks;
     }
 }
